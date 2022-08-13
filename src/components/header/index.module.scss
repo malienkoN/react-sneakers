@@ -1,0 +1,41 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  border-bottom: 1px solid #eaeaea;
+
+  & > div {
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-right: 15px;
+    }
+
+    p {
+      font-size: 20px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    span {
+      font-size: 14px;
+      color: #9D9D9D;
+    }
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+
+    li:not(:last-child) {
+      margin-right: 30px;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+    }
+  }
+}

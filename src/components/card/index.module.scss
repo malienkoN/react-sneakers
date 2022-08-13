@@ -1,0 +1,53 @@
+.card {
+  background: #ffffff;
+  border: 1px solid #f3f3f3;
+  border-radius: 40px;
+  //max-width: 210px;
+  padding: 30px;
+}
+
+.cardImg {
+  max-width: 133px;
+  margin-bottom: 15px;
+}
+
+.cardName {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.cardPrice {
+  span {
+    display: block;
+    font-weight: 500;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #BDBDBD;
+    margin-bottom: 5px;
+  }
+
+  b {
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+  }
+}
+
+.cardFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardAdd {
+  background: #FFFFFF;
+  border: 1px solid #F2F2F2;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
