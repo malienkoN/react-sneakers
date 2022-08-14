@@ -1,17 +1,17 @@
 @import "./reset.scss";
-@import "./colors.scss";
 
 body {
   margin: 0;
   font-size: 16px;
   line-height: 1.3;
-  color: $black;
+  color: #000;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #e7f6ff;
+  overflow: hidden;
 }
 
 code {
@@ -31,7 +31,7 @@ img {
 }
 
 .wrapper {
-  background-color: $white;
+  background-color: #fff;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.04);
   border-radius: 20px;
   max-width: 1080px;
@@ -47,8 +47,63 @@ main {
   }
 }
 
+.search-block {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  input {
+    border: 1px solid #F3F3F3;
+    border-radius: 10px;
+    padding: 0 15px 0 45px;
+    width: 250px;
+    height: 45px;
+    max-width: 100%;
+    font-family: inherit;
+    font-size: 16px;
+  }
+
+  & > div {
+    position: relative;
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+}
+
 .cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 40px;
+}
+
+.green-button {
+  background-color: #9DD558;
+  border-radius: 18px;
+  font-weight: 600;
+  border: none;
+  width: 100%;
+  height: 45px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color .2s ease-in-out;
+
+  &:hover {
+    background-color: lighten(#9DD558, 5%);
+  }
 }

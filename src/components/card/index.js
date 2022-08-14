@@ -1,17 +1,21 @@
 import styles from "./index.module.scss";
 
-export const Card = () => {
+export const Card = (props) => {
+
     return (
         <div className={styles.card}>
-            <img className={styles.cardImg} src="./img/sneakers/1.jpg" alt=""/>
-            <p className={styles.cardName}>Men's shoes Nike Blazer Mid Suede</p>
+            <button className={styles.cardFavorite}>
+                <img width={32} height={32} src="./react-sneakers/img/like-default.svg" alt="Unliked"/>
+            </button>
+            <img className={styles.cardImg} src={props.img} alt="Sneakers"/>
+            <p className={styles.cardName}>{props.title}</p>
             <div className={styles.cardFooter}>
                 <div className={styles.cardPrice}>
                     <span>Price</span>
-                    <b>500 $</b>
+                    <b>{props.price} $</b>
                 </div>
                 <button className={styles.cardAdd}>
-                    <img width={12} height={12} src="./img/plus.svg" alt="Plus"/>
+                    <img width={32} height={32} src="./react-sneakers/img/plus.svg" alt="Plus"/>
                 </button>
             </div>
         </div>
