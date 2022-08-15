@@ -1,4 +1,4 @@
-import './index.module.scss';
+import './header.module.scss';
 
 export const Header =  () => {
     return (

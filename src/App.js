@@ -1,35 +1,35 @@
-import { Header } from "./components/header";
-import { Card } from "./components/card";
-import { Cart } from "./components/cart";
+import { Header } from "./components/Header";
+import { Card } from "./components/Card";
+import { Cart } from "./components/Cart";
 
 const cardsData = [
     {
         img: "./react-sneakers/img/sneakers/1.jpg",
         title: "Nike Blazer Mid Suede Men's sneakers",
-        price: "500",
+        price: 500,
     },
     {
         img: "./react-sneakers/img/sneakers/2.jpg",
         title: "Nike Air Max 270 Men's sneakers",
-        price: "450",
+        price: 450,
     },
     {
         img: "./react-sneakers/img/sneakers/3.jpg",
         title: "Nike Blazer Mid Suede Men's sneakers",
-        price: "475",
+        price: 475,
     },
     {
         img: "./react-sneakers/img/sneakers/4.jpg",
         title: "Puma X Aka Boku Future Rider sneakers ",
-        price: "499",
+        price: 499,
     },
 ];
 
 function App() {
   return (
     <div className="wrapper">
-        <Header />
         <Cart />
+        <Header />
         <main>
             <div className="search-block">
                 <h1>All sneakers:</h1>
